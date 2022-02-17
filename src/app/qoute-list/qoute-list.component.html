@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="qoute-list.component.css">
+<div class="row">
+    <div class="col">
+        <h1>Qoutes</h1>
+        <hr>
+        <div *ngFor='let qoute of qoutes;let i = index'>
+            <div class="qoute-content">
+                <h2>{{qoute.name}}</h2>
+                <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute' (isUseless)='uselessQoute($event,i)'></app-qoute-detail>
+                <div class="row">
+                    <div class="col">
+                        <button class="details" (click)='toggleDetails(i)'>Details</button>
+                    </div>
+                    <div class="col">
+                        <p>{{qoute.upVote}}</p><button (click)=upVote(i)>upvote</button>
+
+                    </div>
+                    <div class="col">
+                        <p>{{qoute.downVote}}</p><button (click)=downVote(i)>downvote</button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col">
+        <app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form>
+
+    </div>
+
+
+
+
+</div>

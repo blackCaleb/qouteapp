@@ -1,0 +1,13 @@
+li {
+    padding-bottom: 20px;
+    margin-left: 30px;
+}
+
+button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    color: white;
+    border: solid 5px red;
+    background-color: red;
+}

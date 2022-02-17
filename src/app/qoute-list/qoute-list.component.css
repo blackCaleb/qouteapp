@@ -1,0 +1,31 @@
+h2 {
+    margin-left: 30px;
+}
+
+.row {
+    height: 12vh;
+}
+
+button {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    color: white;
+    border: solid 5px bisque;
+    background-color: bisque;
+}
+
+.details {
+    margin-top: 45px;
+}
+
+.qoute-content {
+    border: solid 2px black;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-left: 40%;
+}
